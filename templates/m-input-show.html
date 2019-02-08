@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block content %}
+<hr />
+<a style="color: red">Message: {{ msg }}</a>
+<hr />
+<p>Name: {{ name }} - {{ meta }}</p>
+<div style="border: 1px solid black">
+    <p>Education:</p>
+    {% for s in school %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ s.text }}</p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Work:</p>
+    {% for w in workTitle %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ w.text }} </p>
+    {% endfor %}
+
+    <p>Work Positions:</p>
+    {% for p in position %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ p.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Address Title:</p>
+    {% for at in addressTitle %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ at.text }} </p>
+    {% endfor %}
+
+    <p>Address:</p>
+    {% for a in address %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ a.h4.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Basic Info</p>
+    <p>Title:</p>
+    {% for bt in bItitle %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ bt.text }} </p>
+    {% endfor %}
+
+    <p>Value:</p>
+    {% for bv in bIvalue %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ bv.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Relationship:</p>
+    {% for r in relation %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ r.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Professional Skills:</p>
+    {% for pS in pr %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ pS.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Family Members</p>
+    <p>Title:</p>
+    {% for fmT in fMtitle %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ fmT.text }} </p>
+    {% endfor %}
+
+    <p>Value:</p>
+    {% for fmV in fMvalue %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ fmV.text }} </p>
+    {% endfor %}
+</div>
+
+<div style="border: 1px solid black">
+    <p>Contact Info</p>
+    <p>Title:</p>
+    {% for cIt in cItitle %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ cIt.text }} </p>
+    {% endfor %}
+
+    <p>Value:</p>
+    {% for cIv in cIvalue %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ cIv.text }} </p>
+    {% endfor %}
+</div>
+
+    <!--<p>{{ workers }}</-->
+{% endblock content %}

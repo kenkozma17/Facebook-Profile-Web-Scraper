@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <title>FB-Scraper</title>
+    <style>
+        .gd-con, .info-con {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .mobile-text {
+            width: 80%;
+            height: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/home"><b>FB-Scraper</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Log out</a>
+          </li>
+        </ul>
+      </div>
+        <form>
+            <div style="margin-right: 100px;">
+                <p style="float: left; margin-right: 20px; margin-top: 10px">Welcome, {{ g.user }}</p>
+            <!-- Search form -->
+              <input class="form-control" style="width: 300px" id="search" type="text" placeholder="Search Voter" aria-label="Search">
+            </div>
+        </form>
+    </nav>
+    {% block content %}{% endblock %}
+    </div>
+    <!-- jQuery -->
+    <script src="static/js/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script src="static/js/jquery-ui.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="static/js/pygal-tooltips.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="static/js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="static/js/form.js"></script>
+
+
+</body>
+</html>

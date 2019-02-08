@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<hr />
+<h1 style="text-align: center">Legal Voters in Catanduanes Data Analysis</h1>
+<hr />
+<div style="display: flex; align-items: center; justify-content: center;">
+    <div style="width: 600px; height: 600px; float: left" >{{ pieGender|safe }}</div>
+    <div style="width: 600px; height: 600px; float: left" >{{ lineEduc|safe }}</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center;">
+    <div style="width: 600px; height: 600px; float: left" >{{ lineAge|safe }}</div>
+</div>
+<hr />
+{% endblock content %}

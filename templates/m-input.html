@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="info-con">
+         <form method="POST" action="/parseMobile">
+             <h1>Enter Facebook Mobile Source Code</h1>
+            <div class="form-group">
+                <textarea rows="10" cols="50" type="text" name="mSource2" class="mobile-text" placeholder="Enter Facebook Profile Web Page SOURCE CODE" required></textarea>
+                <textarea rows="10" cols="50" type="text" name="mSource1" class="mobile-text" placeholder="Enter Facebook Profile Mobile About Page SOURCE CODE" required></textarea/>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock content %}

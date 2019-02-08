@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+    .table-con {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+</style>
+<div class="table-con">
+    <table id="example" class="display" cellspacing="0" width="100%">
+        <h1 style="text-align: center">System Users</h1>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Access</th>
+            </tr>
+        </thead>
+        <tbody>
+      {% for user in users %}
+        <tr>
+          <th scope="row">{{ user[0] }}</th>
+            <td><a href="/user-profile?id={{user[0]}}">{{ user[1] }}</a></td>
+          <td>{{ user[2] }} </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+        <tfoot>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Access</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+{% endblock content %}
