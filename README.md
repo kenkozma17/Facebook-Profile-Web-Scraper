@@ -1,11 +1,11 @@
-# Voter-Data-Analysis-Web-App
-A Data Analysis System written in python (flask) and with support of Sqlite3.
+# Facebook Profile Web Scraper
+A Data Analysis Application written in Python (Flask) and with support of Sqlite3.
 
 # How it works
-This project was made to gather and analyze data about voters in government elections. All data is gathered from 
-voter's facebook pages with the use of a built-in web scraper. 
+This project was made to gather facebook user profile data. All data is gathered from 
+the users facebook pages with the use of a built-in web scraper. 
 
-This data is then analyzed and displayed in data visualization graphs to find trends and inclinations of the majority of voters.
+This data is then analyzed and displayed in data visualization graphs to find trends and inclinations of the majority of facebook users.
 
 # Built with
 Back end
